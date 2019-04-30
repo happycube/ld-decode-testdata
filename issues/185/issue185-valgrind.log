@@ -1,0 +1,522 @@
+==12558== Memcheck, a memory error detector
+==12558== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==12558== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==12558== Command: tools/ld-dropout-correct/ld-dropout-correct sample.tbc sampled.tbc
+==12558== 
+Info: Frame # 1 [ 2 / 3 ] - 33 dropouts corrected
+==12558== Invalid read of size 1
+==12558==    at 0x10FBCC: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:175)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558==  Address 0xe8c6316 is 10 bytes before a block of size 478,685 alloc'd
+==12558==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12558==    by 0x510D8C1: QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x510FF64: QByteArray::reallocData(unsigned int, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x10FAF0: detach (qbytearray.h:488)
+==12558==    by 0x10FAF0: data (qbytearray.h:482)
+==12558==    by 0x10FAF0: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:175)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558== 
+==12558== Invalid read of size 1
+==12558==    at 0x10FCF1: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:177)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558==  Address 0xe8c6317 is 9 bytes before a block of size 478,685 alloc'd
+==12558==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12558==    by 0x510D8C1: QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x510FF64: QByteArray::reallocData(unsigned int, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x10FAF0: detach (qbytearray.h:488)
+==12558==    by 0x10FAF0: data (qbytearray.h:482)
+==12558==    by 0x10FAF0: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:175)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558== 
+==12558== Syscall param write(buf) points to uninitialised byte(s)
+==12558==    at 0x5E5C154: write (write.c:27)
+==12558==    by 0x52558F7: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x5205822: QFileDevice::writeData(char const*, long long) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x520F9FB: QIODevice::write(char const*, long long) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x10F4AA: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:187)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558==  Address 0xe9f5c5c is 400,412 bytes inside a block of size 478,685 alloc'd
+==12558==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12558==    by 0x510D8C1: QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x510FF64: QByteArray::reallocData(unsigned int, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x10FB81: detach (qbytearray.h:488)
+==12558==    by 0x10FB81: data (qbytearray.h:482)
+==12558==    by 0x10FB81: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:174)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558== 
+Info: Frame # 2 [ 4 / 5 ] - 195 dropouts corrected
+Info: Frame # 3 [ 6 / 7 ] - 44 dropouts corrected
+Info: Frame # 4 [ 8 / 9 ] - 28 dropouts corrected
+==12558== Invalid read of size 1
+==12558==    at 0x10FFDB: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:156)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558==  Address 0xf2f2a9c is 4 bytes before a block of size 478,685 alloc'd
+==12558==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12558==    by 0x510D8C1: QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x510FF64: QByteArray::reallocData(unsigned int, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x10FF00: detach (qbytearray.h:488)
+==12558==    by 0x10FF00: data (qbytearray.h:482)
+==12558==    by 0x10FF00: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:156)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558== 
+==12558== Invalid read of size 1
+==12558==    at 0x1100FF: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:158)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558==  Address 0xf2f2a9d is 3 bytes before a block of size 478,685 alloc'd
+==12558==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12558==    by 0x510D8C1: QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x510FF64: QByteArray::reallocData(unsigned int, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x10FF00: detach (qbytearray.h:488)
+==12558==    by 0x10FF00: data (qbytearray.h:482)
+==12558==    by 0x10FF00: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:156)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558== 
+Info: Frame # 5 [ 10 / 11 ] - 175 dropouts corrected
+Info: Frame # 6 [ 12 / 13 ] - 23 dropouts corrected
+Info: Frame # 7 [ 14 / 15 ] - 135 dropouts corrected
+==12558== Invalid write of size 1
+==12558==    at 0x10FFF5: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:155)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558==  Address 0xe608912 is 477,394 bytes inside a block of size 478,685 free'd
+==12558==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12558==    by 0x4E4617E: SourceVideo::getVideoField(int) (in /usr/lib/libld-decode-shared.so.1.0.0)
+==12558==    by 0x10ED0A: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:140)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558==  Block was alloc'd at
+==12558==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12558==    by 0x510D8C1: QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x51102D2: QByteArray::resize(int) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x4E45933: SourceVideo::readRawFieldData() (in /usr/lib/libld-decode-shared.so.1.0.0)
+==12558==    by 0x4E46089: SourceVideo::getVideoField(int) (in /usr/lib/libld-decode-shared.so.1.0.0)
+==12558==    by 0x10ED0A: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:140)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558== 
+==12558== Invalid write of size 1
+==12558==    at 0x11011C: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:157)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558==  Address 0xe608913 is 477,395 bytes inside a block of size 478,685 free'd
+==12558==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12558==    by 0x4E4617E: SourceVideo::getVideoField(int) (in /usr/lib/libld-decode-shared.so.1.0.0)
+==12558==    by 0x10ED0A: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:140)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558==  Block was alloc'd at
+==12558==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12558==    by 0x510D8C1: QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x51102D2: QByteArray::resize(int) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x4E45933: SourceVideo::readRawFieldData() (in /usr/lib/libld-decode-shared.so.1.0.0)
+==12558==    by 0x4E46089: SourceVideo::getVideoField(int) (in /usr/lib/libld-decode-shared.so.1.0.0)
+==12558==    by 0x10ED0A: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:140)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558== 
+Info: Frame # 8 [ 16 / 17 ] - 53 dropouts corrected
+Info: Frame # 9 [ 18 / 19 ] - 22 dropouts corrected
+Info: Frame # 10 [ 20 / 21 ] - 157 dropouts corrected
+Info: Frame # 11 [ 22 / 23 ] - 12 dropouts corrected
+Info: Frame # 12 [ 24 / 25 ] - 117 dropouts corrected
+Info: Frame # 13 [ 26 / 27 ] - 45 dropouts corrected
+Info: Frame # 14 [ 28 / 29 ] - 21 dropouts corrected
+==12558== Invalid write of size 1
+==12558==    at 0x10FBE6: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:174)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558==  Address 0xf993cda is 3,714,682 bytes inside an unallocated block of size 3,715,456 in arena "client"
+==12558== 
+==12558== Invalid write of size 1
+==12558==    at 0x10FD0E: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:176)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558==  Address 0xf993cdb is 3,714,683 bytes inside an unallocated block of size 3,715,456 in arena "client"
+==12558== 
+Info: Frame # 15 [ 30 / 31 ] - 132 dropouts corrected
+Info: Frame # 16 [ 32 / 33 ] - 16 dropouts corrected
+Info: Frame # 17 [ 34 / 35 ] - 99 dropouts corrected
+Info: Frame # 18 [ 36 / 37 ] - 82 dropouts corrected
+Info: Frame # 19 [ 38 / 39 ] - 15 dropouts corrected
+==12558== Conditional jump or move depends on uninitialised value(s)
+==12558==    at 0x10D14F: DropOutCorrect::findReplacementLine(QVector<DropOutCorrect::DropOutLocation>, QVector<DropOutCorrect::DropOutLocation>, int, bool) (dropoutcorrect.cpp:420)
+==12558==    by 0x10EA92: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:119)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558== 
+==12558== Conditional jump or move depends on uninitialised value(s)
+==12558==    at 0x10D41D: DropOutCorrect::findReplacementLine(QVector<DropOutCorrect::DropOutLocation>, QVector<DropOutCorrect::DropOutLocation>, int, bool) (dropoutcorrect.cpp:442)
+==12558==    by 0x10EA92: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:119)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558== 
+==12558== Conditional jump or move depends on uninitialised value(s)
+==12558==    at 0x10D14F: DropOutCorrect::findReplacementLine(QVector<DropOutCorrect::DropOutLocation>, QVector<DropOutCorrect::DropOutLocation>, int, bool) (dropoutcorrect.cpp:420)
+==12558==    by 0x10EC9F: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:134)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558== 
+==12558== Conditional jump or move depends on uninitialised value(s)
+==12558==    at 0x10D41D: DropOutCorrect::findReplacementLine(QVector<DropOutCorrect::DropOutLocation>, QVector<DropOutCorrect::DropOutLocation>, int, bool) (dropoutcorrect.cpp:442)
+==12558==    by 0x10EC9F: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:134)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558== 
+Info: Frame # 20 [ 40 / 41 ] - 160 dropouts corrected
+Info: Frame # 21 [ 42 / 43 ] - 16 dropouts corrected
+==12558== Invalid read of size 4
+==12558==    at 0x10D14B: DropOutCorrect::findReplacementLine(QVector<DropOutCorrect::DropOutLocation>, QVector<DropOutCorrect::DropOutLocation>, int, bool) (dropoutcorrect.cpp:420)
+==12558==    by 0x10EC9F: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:134)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558==  Address 0xce231ec is 44 bytes inside a block of size 136 free'd
+==12558==    at 0x4C31D2F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12558==    by 0x510D978: QArrayData::reallocateUnaligned(QArrayData*, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x510FFE9: QByteArray::reallocData(unsigned int, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x51101C9: QByteArray::resize(int) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x534C847: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x534CBB4: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x51889E5: QString::toLocal8Bit_helper(QChar const*, int) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x10B78A: toLocal8Bit (qstring.h:520)
+==12558==    by 0x10B78A: debugOutputHandler(QtMsgType, QMessageLogContext const&, QString const&) (main.cpp:43)
+==12558==    by 0x50F76A9: qt_message_output(QtMsgType, QMessageLogContext const&, QString const&) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x51F36EF: QDebug::~QDebug() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x10D9BF: DropOutCorrect::findReplacementLine(QVector<DropOutCorrect::DropOutLocation>, QVector<DropOutCorrect::DropOutLocation>, int, bool) (dropoutcorrect.cpp:485)
+==12558==    by 0x10EC9F: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:134)
+==12558==  Block was alloc'd at
+==12558==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12558==    by 0x510D8C1: QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x510FEFF: QByteArray::QByteArray(int, Qt::Initialization) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x534CB05: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x534CBB4: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x51889E5: QString::toLocal8Bit_helper(QChar const*, int) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x10B78A: toLocal8Bit (qstring.h:520)
+==12558==    by 0x10B78A: debugOutputHandler(QtMsgType, QMessageLogContext const&, QString const&) (main.cpp:43)
+==12558==    by 0x50F76A9: qt_message_output(QtMsgType, QMessageLogContext const&, QString const&) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x51F36EF: QDebug::~QDebug() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x10D9BF: DropOutCorrect::findReplacementLine(QVector<DropOutCorrect::DropOutLocation>, QVector<DropOutCorrect::DropOutLocation>, int, bool) (dropoutcorrect.cpp:485)
+==12558==    by 0x10EC9F: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:134)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558== 
+==12558== Invalid read of size 4
+==12558==    at 0x10D41A: DropOutCorrect::findReplacementLine(QVector<DropOutCorrect::DropOutLocation>, QVector<DropOutCorrect::DropOutLocation>, int, bool) (dropoutcorrect.cpp:442)
+==12558==    by 0x10EC9F: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:134)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558==  Address 0xce231ec is 44 bytes inside a block of size 136 free'd
+==12558==    at 0x4C31D2F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12558==    by 0x510D978: QArrayData::reallocateUnaligned(QArrayData*, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x510FFE9: QByteArray::reallocData(unsigned int, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x51101C9: QByteArray::resize(int) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x534C847: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x534CBB4: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x51889E5: QString::toLocal8Bit_helper(QChar const*, int) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x10B78A: toLocal8Bit (qstring.h:520)
+==12558==    by 0x10B78A: debugOutputHandler(QtMsgType, QMessageLogContext const&, QString const&) (main.cpp:43)
+==12558==    by 0x50F76A9: qt_message_output(QtMsgType, QMessageLogContext const&, QString const&) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x51F36EF: QDebug::~QDebug() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x10D9BF: DropOutCorrect::findReplacementLine(QVector<DropOutCorrect::DropOutLocation>, QVector<DropOutCorrect::DropOutLocation>, int, bool) (dropoutcorrect.cpp:485)
+==12558==    by 0x10EC9F: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:134)
+==12558==  Block was alloc'd at
+==12558==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12558==    by 0x510D8C1: QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x510FEFF: QByteArray::QByteArray(int, Qt::Initialization) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x534CB05: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x534CBB4: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x51889E5: QString::toLocal8Bit_helper(QChar const*, int) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x10B78A: toLocal8Bit (qstring.h:520)
+==12558==    by 0x10B78A: debugOutputHandler(QtMsgType, QMessageLogContext const&, QString const&) (main.cpp:43)
+==12558==    by 0x50F76A9: qt_message_output(QtMsgType, QMessageLogContext const&, QString const&) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x51F36EF: QDebug::~QDebug() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x10D9BF: DropOutCorrect::findReplacementLine(QVector<DropOutCorrect::DropOutLocation>, QVector<DropOutCorrect::DropOutLocation>, int, bool) (dropoutcorrect.cpp:485)
+==12558==    by 0x10EC9F: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:134)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558== 
+Info: Frame # 22 [ 44 / 45 ] - 63 dropouts corrected
+Info: Frame # 23 [ 46 / 47 ] - 106 dropouts corrected
+Info: Frame # 24 [ 48 / 49 ] - 25 dropouts corrected
+Info: Frame # 25 [ 50 / 51 ] - 168 dropouts corrected
+Info: Frame # 26 [ 52 / 53 ] - 14 dropouts corrected
+Info: Frame # 27 [ 54 / 55 ] - 54 dropouts corrected
+Info: Frame # 28 [ 56 / 57 ] - 121 dropouts corrected
+Info: Frame # 29 [ 58 / 59 ] - 13 dropouts corrected
+Info: Frame # 30 [ 60 / 61 ] - 127 dropouts corrected
+Info: Frame # 31 [ 62 / 63 ] - 15 dropouts corrected
+Info: Frame # 32 [ 64 / 65 ] - 33 dropouts corrected
+Info: Frame # 33 [ 66 / 67 ] - 132 dropouts corrected
+Info: Frame # 34 [ 68 / 69 ] - 17 dropouts corrected
+==12558== Invalid read of size 4
+==12558==    at 0x10D114: DropOutCorrect::findReplacementLine(QVector<DropOutCorrect::DropOutLocation>, QVector<DropOutCorrect::DropOutLocation>, int, bool) (dropoutcorrect.cpp:420)
+==12558==    by 0x10EA92: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:119)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558==  Address 0xcbed390 is 16 bytes after a block of size 112 in arena "client"
+==12558== 
+==12558== Invalid read of size 4
+==12558==    at 0x10D3E4: DropOutCorrect::findReplacementLine(QVector<DropOutCorrect::DropOutLocation>, QVector<DropOutCorrect::DropOutLocation>, int, bool) (dropoutcorrect.cpp:442)
+==12558==    by 0x10EA92: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:119)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558==  Address 0xcbed390 is 16 bytes after a block of size 112 in arena "client"
+==12558== 
+Info: Frame # 35 [ 70 / 71 ] - 172 dropouts corrected
+Info: Frame # 36 [ 72 / 73 ] - 18 dropouts corrected
+Info: Frame # 37 [ 74 / 75 ] - 27 dropouts corrected
+Info: Frame # 38 [ 76 / 77 ] - 133 dropouts corrected
+Info: Frame # 39 [ 78 / 79 ] - 24 dropouts corrected
+Info: Frame # 40 [ 80 / 81 ] - 143 dropouts corrected
+Info: Frame # 41 [ 82 / 83 ] - 12 dropouts corrected
+Info: Frame # 42 [ 84 / 85 ] - 12 dropouts corrected
+Info: Frame # 43 [ 86 / 87 ] - 177 dropouts corrected
+Info: Frame # 44 [ 88 / 89 ] - 24 dropouts corrected
+Info: Frame # 45 [ 90 / 91 ] - 183 dropouts corrected
+Info: Frame # 46 [ 92 / 93 ] - 9 dropouts corrected
+Info: Frame # 47 [ 94 / 95 ] - 12 dropouts corrected
+==12558== Invalid read of size 4
+==12558==    at 0x10D41A: DropOutCorrect::findReplacementLine(QVector<DropOutCorrect::DropOutLocation>, QVector<DropOutCorrect::DropOutLocation>, int, bool) (dropoutcorrect.cpp:442)
+==12558==    by 0x10EA92: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:119)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558==  Address 0xb009d1c is 4 bytes after a block of size 56 alloc'd
+==12558==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12558==    by 0x510D8C1: QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x11109E: allocate (qarraydata.h:223)
+==12558==    by 0x11109E: QVector<DropOutCorrect::DropOutLocation>::reallocData(int, int, QFlags<QArrayData::AllocationOption>) (qvector.h:550)
+==12558==    by 0x10D2A4: detach (qvector.h:384)
+==12558==    by 0x10D2A4: data (qvector.h:129)
+==12558==    by 0x10D2A4: operator[] (qvector.h:432)
+==12558==    by 0x10D2A4: DropOutCorrect::findReplacementLine(QVector<DropOutCorrect::DropOutLocation>, QVector<DropOutCorrect::DropOutLocation>, int, bool) (dropoutcorrect.cpp:440)
+==12558==    by 0x10EA92: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:119)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558== 
+Info: Frame # 48 [ 96 / 97 ] - 156 dropouts corrected
+Info: Frame # 49 [ 98 / 99 ] - 14 dropouts corrected
+Info: Frame # 50 [ 100 / 101 ] - 168 dropouts corrected
+Info: Frame # 51 [ 102 / 103 ] - 6 dropouts corrected
+Info: Frame # 52 [ 104 / 105 ] - 11 dropouts corrected
+==12558== Invalid read of size 4
+==12558==    at 0x10D14B: DropOutCorrect::findReplacementLine(QVector<DropOutCorrect::DropOutLocation>, QVector<DropOutCorrect::DropOutLocation>, int, bool) (dropoutcorrect.cpp:420)
+==12558==    by 0x10EA92: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:119)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558==  Address 0xc21de3c is 20 bytes after a block of size 56 alloc'd
+==12558==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12558==    by 0x510D8C1: QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x11109E: allocate (qarraydata.h:223)
+==12558==    by 0x11109E: QVector<DropOutCorrect::DropOutLocation>::reallocData(int, int, QFlags<QArrayData::AllocationOption>) (qvector.h:550)
+==12558==    by 0x10CD34: detach (qvector.h:384)
+==12558==    by 0x10CD34: data (qvector.h:129)
+==12558==    by 0x10CD34: operator[] (qvector.h:432)
+==12558==    by 0x10CD34: DropOutCorrect::findReplacementLine(QVector<DropOutCorrect::DropOutLocation>, QVector<DropOutCorrect::DropOutLocation>, int, bool) (dropoutcorrect.cpp:418)
+==12558==    by 0x10EA92: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:119)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558== 
+==12558== Invalid read of size 4
+==12558==    at 0x10D114: DropOutCorrect::findReplacementLine(QVector<DropOutCorrect::DropOutLocation>, QVector<DropOutCorrect::DropOutLocation>, int, bool) (dropoutcorrect.cpp:420)
+==12558==    by 0x10EC9F: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:134)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558==  Address 0xa22e2e0 is 16 bytes after a block of size 64 in arena "client"
+==12558== 
+==12558== Invalid read of size 4
+==12558==    at 0x10D3E4: DropOutCorrect::findReplacementLine(QVector<DropOutCorrect::DropOutLocation>, QVector<DropOutCorrect::DropOutLocation>, int, bool) (dropoutcorrect.cpp:442)
+==12558==    by 0x10EC9F: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:134)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558==  Address 0xa22e2e0 is 16 bytes after a block of size 64 in arena "client"
+==12558== 
+Info: Frame # 53 [ 106 / 107 ] - 164 dropouts corrected
+Info: Frame # 54 [ 108 / 109 ] - 20 dropouts corrected
+Info: Frame # 55 [ 110 / 111 ] - 168 dropouts corrected
+Info: Frame # 56 [ 112 / 113 ] - 12 dropouts corrected
+Info: Frame # 57 [ 114 / 115 ] - 11 dropouts corrected
+Info: Frame # 58 [ 116 / 117 ] - 198 dropouts corrected
+Info: Frame # 59 [ 118 / 119 ] - 20 dropouts corrected
+Info: Frame # 60 [ 120 / 121 ] - 182 dropouts corrected
+Info: Frame # 61 [ 122 / 123 ] - 8 dropouts corrected
+Info: Frame # 62 [ 124 / 125 ] - 17 dropouts corrected
+Info: Frame # 63 [ 126 / 127 ] - 183 dropouts corrected
+Info: Frame # 64 [ 128 / 129 ] - 15 dropouts corrected
+Info: Frame # 65 [ 130 / 131 ] - 171 dropouts corrected
+Info: Frame # 66 [ 132 / 133 ] - 19 dropouts corrected
+Info: Frame # 67 [ 134 / 135 ] - 17 dropouts corrected
+Info: Frame # 68 [ 136 / 137 ] - 154 dropouts corrected
+Info: Frame # 69 [ 138 / 139 ] - 12 dropouts corrected
+Info: Frame # 70 [ 140 / 141 ] - 145 dropouts corrected
+Info: Frame # 71 [ 142 / 143 ] - 19 dropouts corrected
+Info: Frame # 72 [ 144 / 145 ] - 14 dropouts corrected
+Info: Frame # 73 [ 146 / 147 ] - 165 dropouts corrected
+Info: Frame # 74 [ 148 / 149 ] - 21 dropouts corrected
+Info: Frame # 75 [ 150 / 151 ] - 155 dropouts corrected
+Info: Frame # 76 [ 152 / 153 ] - 36 dropouts corrected
+Info: Frame # 77 [ 154 / 155 ] - 16 dropouts corrected
+Info: Frame # 78 [ 156 / 157 ] - 172 dropouts corrected
+Info: Frame # 79 [ 158 / 159 ] - 15 dropouts corrected
+Info: Frame # 80 [ 160 / 161 ] - 115 dropouts corrected
+Info: Frame # 81 [ 162 / 163 ] - 63 dropouts corrected
+Info: Frame # 82 [ 164 / 165 ] - 18 dropouts corrected
+Info: Frame # 83 [ 166 / 167 ] - 165 dropouts corrected
+Info: Frame # 84 [ 168 / 169 ] - 18 dropouts corrected
+Info: Frame # 85 [ 170 / 171 ] - 86 dropouts corrected
+Info: Frame # 86 [ 172 / 173 ] - 63 dropouts corrected
+Info: Frame # 87 [ 174 / 175 ] - 18 dropouts corrected
+Info: Frame # 88 [ 176 / 177 ] - 167 dropouts corrected
+Info: Frame # 89 [ 178 / 179 ] - 15 dropouts corrected
+Info: Frame # 90 [ 180 / 181 ] - 73 dropouts corrected
+Info: Frame # 91 [ 182 / 183 ] - 95 dropouts corrected
+Info: Frame # 92 [ 184 / 185 ] - 16 dropouts corrected
+Info: Frame # 93 [ 186 / 187 ] - 138 dropouts corrected
+Info: Frame # 94 [ 188 / 189 ] - 18 dropouts corrected
+Info: Frame # 95 [ 190 / 191 ] - 56 dropouts corrected
+Info: Frame # 96 [ 192 / 193 ] - 103 dropouts corrected
+Info: Frame # 97 [ 194 / 195 ] - 19 dropouts corrected
+Info: Frame # 98 [ 196 / 197 ] - 173 dropouts corrected
+Info: Frame # 99 [ 198 / 199 ] - 15 dropouts corrected
+Info: Frame # 100 [ 200 / 201 ] - 32 dropouts corrected
+Info: Frame # 101 [ 202 / 203 ] - 125 dropouts corrected
+Info: Frame # 102 [ 204 / 205 ] - 16 dropouts corrected
+Info: Frame # 103 [ 206 / 207 ] - 129 dropouts corrected
+Info: Frame # 104 [ 208 / 209 ] - 14 dropouts corrected
+Info: Frame # 105 [ 210 / 211 ] - 36 dropouts corrected
+==12558== Invalid write of size 1
+==12558==    at 0x10EF67: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:148)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558==  Address 0xb3c5d40 is 48 bytes inside a block of size 64 free'd
+==12558==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12558==    by 0x11106A: deallocate (qarraydata.h:237)
+==12558==    by 0x11106A: freeData (qvector.h:530)
+==12558==    by 0x11106A: QVector<DropOutCorrect::DropOutLocation>::reallocData(int, int, QFlags<QArrayData::AllocationOption>) (qvector.h:611)
+==12558==    by 0x111282: QVector<DropOutCorrect::DropOutLocation>::append(DropOutCorrect::DropOutLocation const&) (qvector.h:654)
+==12558==    by 0x10DDE8: DropOutCorrect::populateDropoutsVector(LdDecodeMetaData::Field) (dropoutcorrect.cpp:234)
+==12558==    by 0x10E7D1: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:106)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558==  Block was alloc'd at
+==12558==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12558==    by 0x510D8C1: QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x11109E: allocate (qarraydata.h:223)
+==12558==    by 0x11109E: QVector<DropOutCorrect::DropOutLocation>::reallocData(int, int, QFlags<QArrayData::AllocationOption>) (qvector.h:550)
+==12558==    by 0x111282: QVector<DropOutCorrect::DropOutLocation>::append(DropOutCorrect::DropOutLocation const&) (qvector.h:654)
+==12558==    by 0x10DDE8: DropOutCorrect::populateDropoutsVector(LdDecodeMetaData::Field) (dropoutcorrect.cpp:234)
+==12558==    by 0x10E7D1: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:106)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558== 
+==12558== Invalid write of size 1
+==12558==    at 0x10F090: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:150)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558==  Address 0xb3c5d41 is 49 bytes inside a block of size 64 free'd
+==12558==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12558==    by 0x11106A: deallocate (qarraydata.h:237)
+==12558==    by 0x11106A: freeData (qvector.h:530)
+==12558==    by 0x11106A: QVector<DropOutCorrect::DropOutLocation>::reallocData(int, int, QFlags<QArrayData::AllocationOption>) (qvector.h:611)
+==12558==    by 0x111282: QVector<DropOutCorrect::DropOutLocation>::append(DropOutCorrect::DropOutLocation const&) (qvector.h:654)
+==12558==    by 0x10DDE8: DropOutCorrect::populateDropoutsVector(LdDecodeMetaData::Field) (dropoutcorrect.cpp:234)
+==12558==    by 0x10E7D1: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:106)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558==  Block was alloc'd at
+==12558==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12558==    by 0x510D8C1: QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x11109E: allocate (qarraydata.h:223)
+==12558==    by 0x11109E: QVector<DropOutCorrect::DropOutLocation>::reallocData(int, int, QFlags<QArrayData::AllocationOption>) (qvector.h:550)
+==12558==    by 0x111282: QVector<DropOutCorrect::DropOutLocation>::append(DropOutCorrect::DropOutLocation const&) (qvector.h:654)
+==12558==    by 0x10DDE8: DropOutCorrect::populateDropoutsVector(LdDecodeMetaData::Field) (dropoutcorrect.cpp:234)
+==12558==    by 0x10E7D1: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:106)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558== 
+Info: Frame # 106 [ 212 / 213 ] - 135 dropouts corrected
+Info: Frame # 107 [ 214 / 215 ] - 17 dropouts corrected
+Info: Frame # 108 [ 216 / 217 ] - 165 dropouts corrected
+Info: Frame # 109 [ 218 / 219 ] - 20 dropouts corrected
+Info: Frame # 110 [ 220 / 221 ] - 12 dropouts corrected
+Info: Frame # 111 [ 222 / 223 ] - 167 dropouts corrected
+Info: Frame # 112 [ 224 / 225 ] - 30 dropouts corrected
+Info: Frame # 113 [ 226 / 227 ] - 164 dropouts corrected
+Info: Frame # 114 [ 228 / 229 ] - 13 dropouts corrected
+Info: Frame # 115 [ 230 / 231 ] - 13 dropouts corrected
+Info: Frame # 116 [ 232 / 233 ] - 167 dropouts corrected
+Info: Frame # 117 [ 234 / 235 ] - 10 dropouts corrected
+==12558== Invalid write of size 1
+==12558==    at 0x10F2C6: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:167)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558==  Address 0xc23c31c is 12 bytes inside a block of size 64 free'd
+==12558==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12558==    by 0x10B816: deallocate (qarraydata.h:237)
+==12558==    by 0x10B816: ~QByteArray (qbytearray.h:462)
+==12558==    by 0x10B816: debugOutputHandler(QtMsgType, QMessageLogContext const&, QString const&) (main.cpp:43)
+==12558==    by 0x50F76A9: qt_message_output(QtMsgType, QMessageLogContext const&, QString const&) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x51F36EF: QDebug::~QDebug() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x10D9BF: DropOutCorrect::findReplacementLine(QVector<DropOutCorrect::DropOutLocation>, QVector<DropOutCorrect::DropOutLocation>, int, bool) (dropoutcorrect.cpp:485)
+==12558==    by 0x10EC9F: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:134)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558==  Block was alloc'd at
+==12558==    at 0x4C31D2F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12558==    by 0x510D978: QArrayData::reallocateUnaligned(QArrayData*, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x510FFE9: QByteArray::reallocData(unsigned int, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x51101C9: QByteArray::resize(int) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x534C847: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x534CBB4: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x51889E5: QString::toLocal8Bit_helper(QChar const*, int) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x10B78A: toLocal8Bit (qstring.h:520)
+==12558==    by 0x10B78A: debugOutputHandler(QtMsgType, QMessageLogContext const&, QString const&) (main.cpp:43)
+==12558==    by 0x50F76A9: qt_message_output(QtMsgType, QMessageLogContext const&, QString const&) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x51F36EF: QDebug::~QDebug() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x10D9BF: DropOutCorrect::findReplacementLine(QVector<DropOutCorrect::DropOutLocation>, QVector<DropOutCorrect::DropOutLocation>, int, bool) (dropoutcorrect.cpp:485)
+==12558==    by 0x10EC9F: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:134)
+==12558== 
+==12558== Invalid write of size 1
+==12558==    at 0x10F3EE: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:169)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558==  Address 0xc23c31d is 13 bytes inside a block of size 64 free'd
+==12558==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12558==    by 0x10B816: deallocate (qarraydata.h:237)
+==12558==    by 0x10B816: ~QByteArray (qbytearray.h:462)
+==12558==    by 0x10B816: debugOutputHandler(QtMsgType, QMessageLogContext const&, QString const&) (main.cpp:43)
+==12558==    by 0x50F76A9: qt_message_output(QtMsgType, QMessageLogContext const&, QString const&) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x51F36EF: QDebug::~QDebug() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x10D9BF: DropOutCorrect::findReplacementLine(QVector<DropOutCorrect::DropOutLocation>, QVector<DropOutCorrect::DropOutLocation>, int, bool) (dropoutcorrect.cpp:485)
+==12558==    by 0x10EC9F: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:134)
+==12558==    by 0x10B367: main (main.cpp:140)
+==12558==  Block was alloc'd at
+==12558==    at 0x4C31D2F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12558==    by 0x510D978: QArrayData::reallocateUnaligned(QArrayData*, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x510FFE9: QByteArray::reallocData(unsigned int, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x51101C9: QByteArray::resize(int) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x534C847: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x534CBB4: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x51889E5: QString::toLocal8Bit_helper(QChar const*, int) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x10B78A: toLocal8Bit (qstring.h:520)
+==12558==    by 0x10B78A: debugOutputHandler(QtMsgType, QMessageLogContext const&, QString const&) (main.cpp:43)
+==12558==    by 0x50F76A9: qt_message_output(QtMsgType, QMessageLogContext const&, QString const&) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x51F36EF: QDebug::~QDebug() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5)
+==12558==    by 0x10D9BF: DropOutCorrect::findReplacementLine(QVector<DropOutCorrect::DropOutLocation>, QVector<DropOutCorrect::DropOutLocation>, int, bool) (dropoutcorrect.cpp:485)
+==12558==    by 0x10EC9F: DropOutCorrect::process(QString, QString, bool) (dropoutcorrect.cpp:134)
+==12558== 
+Info: Frame # 118 [ 236 / 237 ] - 168 dropouts corrected
+Info: Frame # 119 [ 238 / 239 ] - 9 dropouts corrected
+Info: Frame # 120 [ 240 / 241 ] - 14 dropouts corrected
+Info: Frame # 121 [ 242 / 243 ] - 180 dropouts corrected
+Info: Frame # 122 [ 244 / 245 ] - 10 dropouts corrected
+Info: Frame # 123 [ 246 / 247 ] - 171 dropouts corrected
+Info: Frame # 124 [ 248 / 249 ] - 12 dropouts corrected
+Info: Frame # 125 [ 250 / 251 ] - 10 dropouts corrected
+Info: Frame # 126 [ 252 / 253 ] - 167 dropouts corrected
+Info: Frame # 127 [ 254 / 255 ] - 25 dropouts corrected
+Info: Frame # 128 [ 256 / 257 ] - 160 dropouts corrected
+Info: Frame # 129 [ 258 / 259 ] - 14 dropouts corrected
+Info: Frame # 130 [ 260 / 261 ] - 9 dropouts corrected
+Info: Frame # 131 [ 262 / 263 ] - 156 dropouts corrected
+Info: Frame # 132 [ 264 / 265 ] - 21 dropouts corrected
+Info: Frame # 133 [ 266 / 267 ] - 165 dropouts corrected
+Info: Frame # 134 [ 268 / 269 ] - 12 dropouts corrected
+Info: Frame # 135 [ 270 / 271 ] - 12 dropouts corrected
+Info: Frame # 136 [ 272 / 273 ] - 173 dropouts corrected
+Info: Frame # 137 [ 274 / 275 ] - 22 dropouts corrected
+Info: Frame # 138 [ 276 / 277 ] - 174 dropouts corrected
+Info: Frame # 139 [ 278 / 279 ] - 30 dropouts corrected
+Info: Frame # 140 [ 280 / 281 ] - 22 dropouts corrected
+Info: Frame # 141 [ 282 / 283 ] - 131 dropouts corrected
+Info: Frame # 142 [ 284 / 285 ] - 20 dropouts corrected
+Info: Frame # 143 [ 286 / 287 ] - 131 dropouts corrected
+Info: Frame # 144 [ 288 / 289 ] - 25 dropouts corrected
+Info: Frame # 145 [ 290 / 291 ] - 22 dropouts corrected
+Info: Frame # 146 [ 292 / 293 ] - 156 dropouts corrected
+Info: Frame # 147 [ 294 / 295 ] - 22 dropouts corrected
+Info: Frame # 148 [ 296 / 297 ] - 131 dropouts corrected
+Info: Frame # 149 [ 298 / 299 ] - 43 dropouts corrected
+Info: Creating JSON metadata file for corrected TBC
+Info: Processing complete
+==12558== 
+==12558== HEAP SUMMARY:
+==12558==     in use at exit: 19,308 bytes in 21 blocks
+==12558==   total heap usage: 2,094,466 allocs, 2,094,445 frees, 696,560,601 bytes allocated
+==12558== 
+==12558== LEAK SUMMARY:
+==12558==    definitely lost: 0 bytes in 0 blocks
+==12558==    indirectly lost: 0 bytes in 0 blocks
+==12558==      possibly lost: 0 bytes in 0 blocks
+==12558==    still reachable: 19,308 bytes in 21 blocks
+==12558==         suppressed: 0 bytes in 0 blocks
+==12558== Rerun with --leak-check=full to see details of leaked memory
+==12558== 
+==12558== For counts of detected and suppressed errors, rerun with: -v
+==12558== Use --track-origins=yes to see where uninitialised values come from
+==12558== ERROR SUMMARY: 726 errors from 25 contexts (suppressed: 0 from 0)
